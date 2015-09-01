@@ -1,3 +1,4 @@
+
 /*
  * viz.js
  *
@@ -6,7 +7,7 @@
  * - The options for the look of the chart to be drawn.
  * - How to draw the chart.
  *
- * @author: Tanya L. Crenshaw
+ * @author: Tanya L. Crenshaw and Daniel Hahn
  * @since: Jan 6, 2015
  */
 
@@ -47,6 +48,12 @@ function drawChart() {
     var options = {
         width: 1000,
         height: 563,
+       
+        animation:{
+        startup: true,
+        duration: 500
+        },
+        
 	title: 'Session Hours Provided by University of Portland Librarians in 2014',
         hAxis: {
             title: 'Month',
